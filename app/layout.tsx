@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         className={`${grotesk.className} max-w-[80rem] mx-auto my-auto md:p-[2rem] max-md:h-[100vh] max-md:overflow-y-scroll max-md:overflow-x-hidden relative`}
       >
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
