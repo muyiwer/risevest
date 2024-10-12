@@ -8,9 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        bounceX: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(20px)' },
+        },
+      },
+      animation: {
+        bounceXSlow: 'bounceX 3s ease-in-out infinite',
+        bounceXFast: 'bounceX 1.5s ease-in-out infinite',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#07969E",
+        secondary: "#7B8DA8",
+        tertiary: "#4A5050"
       },
     },
   },
